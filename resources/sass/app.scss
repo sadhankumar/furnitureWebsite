@@ -1,0 +1,24 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.header-links {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .sub-header {
+    color: #333;
+    font-size: 1.29412rem;
+    font-weight: 500;
+    padding-left: .57rem;
+    padding-right: .57rem;
+    line-height: 1.9rem;
+  }
+}
+
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url('/assets/fonts/Gotham-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+}
