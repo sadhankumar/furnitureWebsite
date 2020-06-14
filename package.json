@@ -21,9 +21,12 @@
         "webpack-cli": "^3.3.11"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.13.0",
         "bootstrap": "^4.5.0",
+        "font-awesome": "^4.7.0",
         "gotham-fonts": "^1.0.3",
         "jquery": "^3.5.1",
+        "swiper": "^5.4.3",
         "webpack": "^4.43.0"
     }
 }

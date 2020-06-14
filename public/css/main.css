@@ -623,10 +623,13 @@ body {
   min-width: 100%;
   min-height: 100vh;
   max-width: 100%;
-  max-height: 100vh;
+  max-height: 80vh;
+  padding-left: 108px;
+  padding-right: 100px;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
+  padding-top: 80px;
 }
 
 #bg-video::-webkit-media-controls {

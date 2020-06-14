@@ -10,13 +10,14 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link href="/css/home.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/app.css">
+        <link rel="stylesheet" href="/css/swiper.css">
 
         <!-- Styles -->
         <style>
             html, body {
                 background-color: #fff;
                 color: #636b6f;
-                font-family: 'Nunito', sans-serif;
+                font-family: 'Gotham';
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
@@ -107,25 +108,55 @@
                                     <div class="col-2">
                                         <img src="assets/images/logo.png" alt="Classic Spaces And Products" style="width: 150px;height: 105px">
                                     </div>
-                                    <div class="col-6 header-links">
-                                        <a id="" class="sub-header" target="" href="#top" title="Products">Products</a> 
+                                    <div class="col-7 header-links">
+                                        <a id="" class="sub-header" title="Products" id="dropdownMenuButton" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">Products</a>
+                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <h5 class="px-4"> Chairs </h5>
+                                                    <a class="dropdown-item" href="#">Lounge Chairs </a>
+                                                    <a class="dropdown-item" href="#">Dining Tables </a>
+                                                    <a class="dropdown-item" href="#">Sofas & Daybeds </a>
+                                                    <a class="dropdown-item" href="#">Coffee Tables </a>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h5 class="px-4"> Outdoor Furniture  </h5>
+                                                    <a class="dropdown-item" href="#">Footrests & Stools </a>
+                                                    <a class="dropdown-item" href="#">Desks </a>
+                                                    <a class="dropdown-item" href="#">Bookcases & Cabinets </a>
+                                                    <a class="dropdown-item" href="#">Children's Furniture </a>
+                                                </div>
+                                                <div class="col-4 pl-0">
+                                                    <h5 class="px-4"> Lighting </h5>
+                                                    <a class="dropdown-item" href="#">Furniture Accessories </a>
+                                                    <a class="dropdown-item" href="#">Accessories </a>
+                                                </div>   
+                                            </div>
+                                          </div>
                                         <a id="" class="sub-header" target="" href="#features" title="Products">Living</a> 
                                         <a id="" class="sub-header" target="" href="#top" title="Products">Professionals</a> 
                                         <a id="" class="sub-header" target="" href="#top" title="Products">About Us</a>
                                         <a id="" class="sub-header" target="" href="#top" title="Products">Magazine</a>
                                     </div>
+                                    <div class="col-3 header-icons">
+                                        <i class="fa fa-search fa-6 icons" aria-hidden="true"></i>
+                                        <a class="fa fa-map-marker-alt fa-6 icons" aria-hidden="true"
+                                            target="" href="#contact-us"></a>
+                                        <i class="fa fa-phone fa-6 icons" aria-hidden="true"></i>
+                                    </div>    
                                 </div>     
                                 <!-- <a href="index.html" class="logo"><em>Classic Spaces And Products</em></a> -->
                                 <!-- ***** Logo End ***** -->
                                 <!-- ***** Menu Start ***** -->
-                                <ul class="nav">
-                                    <li class="scroll-to-section"><a href="#top" class="active">Products</a></li>
-                                    <li class="scroll-to-section"><a href="#features">Living</a></li>
+                                <!-- <ul class="nav"> -->
+                                    <!-- <li class="scroll-to-section"><a href="#top" class="active">Products</a></li> -->
+                                    <!-- <li class="scroll-to-section"><a href="#features">Living</a></li> -->
                                     <!-- <li class="scroll-to-section"><a href="#our-classes">Classes</a></li> -->
                                     <!-- <li class="scroll-to-section"><a href="#schedule">Schedules</a></li> -->
-                                    <li class="scroll-to-section"><a href="#contact-us">Contact</a></li> 
+                                    <!-- <li class="scroll-to-section"><a href="#contact-us">Contact</a></li>  -->
                                     <!-- <li class="main-button"><a href="#">Sign Up</a></li> -->
-                                </ul>        
+                                <!-- </ul>         -->
                                 <a class='menu-trigger'>
                                     <span>Menu</span>
                                 </a>
@@ -202,6 +233,64 @@
                 </div>
             </section>
             <!-- ***** Features Item End ***** -->
+
+            <!-- Swiper -->
+              <div class="swiper-container" style="height: 60%;">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/images/5911.jpg" alt="" style="height: 250px;">
+                    </div>  
+                  </div>
+                  <div class="swiper-slide" style="width: 232px;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/images/Cam_1.RGB.jpg" alt="" style="height: 250px;">
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 232px;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/images/Deck_Chair.jpg" alt="" style="height: 250px;">
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 232px;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/images/features-first-icon.jpg" alt="" style="height: 250px;">
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 232px;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/images/king_chair.png" alt="" style="height: 250px;">
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 232px;">
+                    <div class="card" style="width: 18rem;">
+                       <img src="assets/images/plastic-stackable.jpg" alt="" style="height: 250px;">
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 232px;">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/wooden-chair.jpg" alt="" style="height: 250px;">
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 232px;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/images/Cam_1.RGB.jpg" alt="" style="height: 250px;">
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 232px;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/images/features-first-icon.jpg" alt="" style="height: 250px;">
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 232px;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="assets/images/king_chair.png" alt="" style="height: 250px;">
+                    </div>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
             <!-- ***** Call to Action Start ***** -->
                 <section class="section" id="call-to-action" style="background-image: url('../assets/images/cta-bg.jpg')">
                     <div class="container">
@@ -234,21 +323,21 @@
                     <div class="row" id="tabs">
                       <div class="col-lg-4">
                         <ul>
-                          <li><a href='#tabs-1'><img src="assets/images/tabs-first-icon.png" alt="">Products for homes</a></li>
-                          <li style="font-size: 15px"><a href='#tabs-2'><img src="assets/images/tabs-first-icon.png" alt="">Products for Professionals</a></a></li>
-                          <li><a href='#tabs-3'><img src="assets/images/tabs-first-icon.png" alt="">New Products</a></a></li>
-                          <li><a href='#tabs-4'><img src="assets/images/tabs-first-icon.png" alt="">Designers & Architects</a></a></li>
+                          <li><a href='#tabs-1'><img src="assets/icon/sofa.jpg" alt="">Products for homes</a></li>
+                          <li style="font-size: 15px"><a href='#tabs-2'>Products for Professionals</a></a></li>
+                          <li><a href='#tabs-3'>New Products</a></a></li>
+                          <li><a href='#tabs-4'>Designers & Architects</a></a></li>
                         </ul>
                       </div>
                       <div class="col-lg-8">
                         <section class='tabs-content'>
                           <article id='tabs-1'>
-                            <img src="assets/images/training-image-01.jpg" alt="First Class">
+                            <img src="assets/images/maxresdefault.jpg" alt="First Class">
                             <h4>Professionals</h4>
                             <p>Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
-                            <div class="main-button">
+ <!--                            <div class="main-button">
                                 <a href="#">View Schedule</a>
-                            </div>
+                            </div> -->
                           </article>
                         </section>
                       </div>
@@ -264,7 +353,7 @@
                     <div class="row">
                         <div class="col-lg-6 offset-lg-3">
                             <div class="section-heading">
-                                <h2>Expert <em>Trainers</em></h2>
+                                <h2>We carefully select every product to create a catalog.</h2>
                                 <img src="assets/images/line-dec.png" alt="">
                                 <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
                             </div>
@@ -274,7 +363,7 @@
                         <div class="col-lg-4">
                             <div class="trainer-item">
                                 <div class="image-thumb">
-                                    <img src="assets/images/first-trainer.jpg" alt="">
+                                    <img src="assets/images/scandinavian.jpg" alt="">
                                 </div>
                                 <div class="down-content">
                                     <span>Strength Trainer</span>
@@ -292,7 +381,7 @@
                         <div class="col-lg-4">
                             <div class="trainer-item">
                                 <div class="image-thumb">
-                                    <img src="assets/images/second-trainer.jpg" alt="">
+                                    <img src="assets/images/scandinavian-sofa.jpg" alt="">
                                 </div>
                                 <div class="down-content">
                                     <span>Muscle Trainer</span>
@@ -310,7 +399,7 @@
                         <div class="col-lg-4">
                             <div class="trainer-item">
                                 <div class="image-thumb">
-                                    <img src="assets/images/third-trainer.jpg" alt="">
+                                    <img src="assets/images/ddcc0.jpg" alt="">
                                 </div>
                                 <div class="down-content">
                                     <span>Power Trainer</span>
@@ -376,6 +465,27 @@
                 </div>
             </section>
             <!-- ***** Contact Us Area Ends ***** -->
+
+
+        <!-- Swiper JS -->
+        <script type="text/javascript" src="assets/js/swiper.js"></script>
+
+        <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper('.swiper-container', {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              freeMode: true,
+              navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+              },
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+            });
+          </script>
             
             <!-- ***** Footer Start ***** -->
             <footer>
@@ -420,23 +530,6 @@
                     @endauth
                 </div>
             @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
         </div>
     </body>
 </html>

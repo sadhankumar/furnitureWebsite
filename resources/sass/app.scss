@@ -1,5 +1,8 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+
 
 .header-links {
   padding-top: 30px;
@@ -12,13 +15,23 @@
     padding-left: .57rem;
     padding-right: .57rem;
     line-height: 1.9rem;
+    font-family: "Gotham";
   }
 }
 
-@font-face {
-  font-family: 'Gotham-Light';
-  src: url('/assets/fonts/Gotham-Light.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1.5;
+.header-icons {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  
+  .icons {
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #636b6f;
+  }
 }
+
+@font-face {font-family: "Gotham"; src: url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.eot"); src: url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.woff") format("woff"), url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.svg#Gotham") format("svg"); }
+
+// Variable 
+$fa-font-path: "../fonts";
