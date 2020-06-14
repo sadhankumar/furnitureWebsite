@@ -605,13 +605,15 @@ banner
 }
 
 #bg-video {
-    min-width: 100%;
-    min-height: 100vh;
-    max-width: 100%;
-    max-height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-    padding-top: 80px;
+  min-width: 100%;
+  min-height: 80vh;
+  max-width: 100%;
+  max-height: 80vh;
+  padding-left: 108px;
+  padding-right: 100px;
+  object-fit: cover;
+  z-index: -1;
+  padding-top: 80px;
 }
 
 #bg-video::-webkit-media-controls {
@@ -669,12 +671,13 @@ features
 */
 
 #features {
-  margin-bottom: 80px;
+  /*margin-bottom: 80px;*/
 }
 
 .feature-item {
   display: inline-block;
-  margin-bottom: 60px;
+  /*margin-bottom: 60px;*/
+  /*margin-bottom: 15px;*/
 }
 
 .feature-item .left-icon img {
