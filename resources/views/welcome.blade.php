@@ -430,35 +430,57 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <div class="contact-form">
-                                <form id="contact" action="" method="post">
-                                  <div class="row">
-                                    <div class="col-md-6 col-sm-12">
-                                      <fieldset>
-                                        <input name="name" type="text" id="name" placeholder="Your Name*" required="">
-                                      </fieldset>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12">
-                                      <fieldset>
-                                        <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email*" required="">
-                                      </fieldset>
-                                    </div>
-                                    <div class="col-md-12 col-sm-12">
-                                      <fieldset>
-                                        <input name="subject" type="text" id="subject" placeholder="Subject">
-                                      </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                      <fieldset>
-                                        <textarea name="message" rows="6" id="message" placeholder="Message" required=""></textarea>
-                                      </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                      <fieldset>
-                                        <button type="submit" id="form-submit" class="main-button">Send Message</button>
-                                      </fieldset>
-                                    </div>
+                              @if(count($errors) > 0)
+                                <div class="alert alert-danger">
+                                  <ul>
+                                    @foreach($errors->all() as $error)
+                                      <li>{{$error}}</li>
+                                    @endforeach
+                                  </ul>
+                                </div>
+                              @endif
+                              @if(\Session::has('success'))
+                                <div class="alert alert-success">
+                                  <p>{{ \Session::get('success') }}</p>
+                                </div>  
+                              @endif
+                              <form id="contact" action="{{url('customerInfo')}}" method="post">
+                                <!-- {{csrf_field()}} -->
+                                <div class="row">
+                                  <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                      <input name="customer_name" type="text" id="name" placeholder="Your Name*" required="">
+                                    </fieldset>
                                   </div>
-                                </form>
+                                  <div class="col-md-6 col-sm-12">
+                                    <fieldset>    
+                                      <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email*" required="">
+                                    </fieldset>
+                                  <span id="error_email"></span>
+                                  </div>
+                                  <div class="col-md-12 col-sm-12">
+                                    <fieldset>
+                                      <input name="numbers" type="text" id="MobileNo" placeholder="Mobile No">
+                                    </fieldset>
+                                  </div>
+                                  <div class="col-md-12 col-sm-12">
+                                    <fieldset>
+                                      <input name="product_id" type="text" id="productId" placeholder="Product Id">
+                                    </fieldset>
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <fieldset>
+                                      <textarea name="description" rows="6" id="message" placeholder="Message" required=""></textarea>
+                                    </fieldset>
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <fieldset>
+                                      <button type="submit" id="form-submit" class="main-button" name="register">Send Message</button>
+                                    </fieldset>
+                                  </div>
+                                  {{ csrf_field() }}
+                                </div>
+                              </form>
                             </div>
                         </div>
                     </div>
@@ -466,12 +488,11 @@
             </section>
             <!-- ***** Contact Us Area Ends ***** -->
 
-
         <!-- Swiper JS -->
         <script type="text/javascript" src="assets/js/swiper.js"></script>
 
         <!-- Initialize Swiper -->
-          <script>
+        <script>
             var swiper = new Swiper('.swiper-container', {
               slidesPerView: 3,
               spaceBetween: 30,
@@ -485,7 +506,7 @@
                 clickable: true,
               },
             });
-          </script>
+        </script>
             
             <!-- ***** Footer Start ***** -->
             <footer>
@@ -533,3 +554,33 @@
         </div>
     </body>
 </html>
+
+<script>
+    $(document).ready(function() {
+    $('#email').keyup(function(){
+        var error_email = "";
+        var email = $('#email').val();
+        var _token = $('input[name="_token"]').val();
+
+        if(_token) {
+            $.ajax({
+                url:"{{ route('email_available.check') }}",
+                method:"POST",
+                data:{email:email, _token:_token},
+                success:function(result) {
+                    if (result == 'unique') {                   
+                        $('#error_email').html('<lable class="text-success">Email  Available</lable>');
+                        $('#email').removeClass('has-error');
+                        $('#form-submit').attr('disabled',false)
+                    } else {
+                        $('#error_email').html('<lable class="text-danger">Email id already registered </lable>');
+                        $('#email').addClass('has-error');
+                        $('#form-submit').attr('disabled','disabled')
+                    }
+                }
+
+            })
+        }
+    });
+});
+</script>
