@@ -629,7 +629,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 #bg-video::-webkit-media-controls {

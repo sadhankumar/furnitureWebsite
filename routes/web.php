@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/kids', function () {
+    return view('kids');
+});
+
 Route::get('/', 'EmailAvailable@index');
 
 Route::post('/check', 'EmailAvailable@check')->name('email_available.check');
