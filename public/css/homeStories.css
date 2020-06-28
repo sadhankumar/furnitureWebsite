@@ -1,0 +1,32 @@
+#home-top {
+  margin-top: 100px;
+}
+
+#bg-banner {
+  min-width: 100%;
+  min-height: 80vh;
+  max-width: 100%;
+  max-height: 80vh;
+  padding-top: 100px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.items_product {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+#items_list .product_list {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#items_list .section-heading {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+

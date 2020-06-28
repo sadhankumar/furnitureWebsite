@@ -2,5 +2,7 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/css/main.css": "/css/main.css",
+    "/css/homeStories.css": "/css/homeStories.css",
+    "/css/grandRelax.css": "/css/grandRelax.css",
     "/css/swiper.css": "/css/swiper.css"
 }

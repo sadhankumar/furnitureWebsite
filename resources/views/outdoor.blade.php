@@ -15,7 +15,74 @@
 
         <!-- ***** Header Area Start ***** -->
         <header class="header-area header-sticky">
-            @include('header.index')
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="main-nav">
+                            <!-- ***** Logo Start ***** -->
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="assets/images/logo.png" alt="Classic Spaces And Products" style="width: 150px;height: 105px">
+                                </div>
+                                <div class="col-7 header-links">
+                                    <a id="" class="sub-header" title="Products" id="dropdownMenuButton" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">Products</a>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <div class="row" id="myTable">
+                                            <div class="col-3">
+                                                <h5 class="px-4"> Chairs </h5>
+                                                <a class="dropdown-item" href="#">Lounge Chairs </a>
+                                                <a class="dropdown-item" href="#">Dining Tables </a>
+                                                <a class="dropdown-item" href="#">Sofas & Daybeds </a>
+                                                <a class="dropdown-item" href="#">Coffee Tables </a>
+                                            </div>
+                                            <div class="col-5">
+                                                <h5 class="px-4"> Outdoor Furniture  </h5>
+                                                <a class="dropdown-item" href="#">Footrests & Stools </a>
+                                                <a class="dropdown-item" href="#">Desks </a>
+                                                <a class="dropdown-item" href="#">Bookcases & Cabinets </a>
+                                                <a class="dropdown-item" href="#">Children's Furniture </a>
+                                            </div>
+                                            <div class="col-4 pl-0">
+                                                <h5 class="px-4"> Lighting </h5>
+                                                <a class="dropdown-item" href="#">Furniture Accessories </a>
+                                                <a class="dropdown-item" href="#">Accessories </a>
+                                            </div>   
+                                        </div>
+                                      </div>
+                                    <a id="" class="sub-header" target="" href="#features" title="Products">Living</a> 
+                                    <a id="" class="sub-header" target="" href="#top" title="Products">Professionals</a> 
+                                    <a id="" class="sub-header" target="" href="#top" title="Products">About Us</a>
+                                    <a id="" class="sub-header" target="" href="#top" title="Products">Magazine</a>
+                                </div>
+                                <!-- Trigger the modal with a button -->
+                                <div class="col-3 header-icons">
+                                    <i class="fa fa-search fa-6 icons" data-toggle="modal" data-target="#my">
+                                    </i>
+                                    <a class="fa fa-map-marker-alt fa-6 icons" aria-hidden="true"
+                                        target="" href="#contact-us"></a>
+                                    <i class="fa fa-phone fa-6 icons" aria-hidden="true"></i>
+                                </div>    
+                            </div>     
+                            <!-- <a href="index.html" class="logo"><em>Classic Spaces And Products</em></a> -->
+                            <!-- ***** Logo End ***** -->
+                            <!-- ***** Menu Start ***** -->
+                            <!-- <ul class="nav"> -->
+                                <!-- <li class="scroll-to-section"><a href="#top" class="active">Products</a></li> -->
+                                <!-- <li class="scroll-to-section"><a href="#features">Living</a></li> -->
+                                <!-- <li class="scroll-to-section"><a href="#our-classes">Classes</a></li> -->
+                                <!-- <li class="scroll-to-section"><a href="#schedule">Schedules</a></li> -->
+                                <!-- <li class="scroll-to-section"><a href="#contact-us">Contact</a></li>  -->
+                                <!-- <li class="main-button"><a href="#">Sign Up</a></li> -->
+                            <!-- </ul>         -->
+                            <a class='menu-trigger'>
+                                <span>Menu</span>
+                            </a>
+                            <!-- ***** Menu End ***** -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </header>
         <!-- ***** Header Area End ***** -->    
 
@@ -155,24 +222,22 @@
                             <ul class="features-items">
                                 <li class="feature-item">
                                     <div class="left-icon">
-                                        <a href="{{URL::to('/HomeStories')}}">
-                                            <img class="w-50" src="assets/images/features-first-icon.jpg" alt="First One">
-                                        </a>    
+                                        <img class="w-50" src="assets/images/features-first-icon.jpg" alt="First One">
                                     </div>
                                     <div class="right-content">
-                                        <h4>Home Stories for Summer</h4>
+                                        <h4>Home Stories</h4>
                                         <p>Please do not re-distribute this template ZIP file on any template collection website. This is not allowed.</p>
+                                        <a href="#" class="text-button">Discover More</a>
                                     </div>
                                 </li>
                                 <li class="feature-item">
                                     <div class="left-icon">
-                                        <a href="{{URL::to('/Autumn')}}">
-                                            <img class="w-50" src="assets/images/features-first-icon.jpg" alt="second one">
-                                        </a>    
+                                        <img class="w-50" src="assets/images/features-first-icon.jpg" alt="second one">
                                     </div>
                                     <div class="right-content">
-                                        <h4>Autumn 2020</h4>
+                                        <h4> Solitary Lines</h4>
                                         <p>If you wish to support TemplateMo website via PayPal, please feel free to contact us. We appreciate it a lot.</p>
+                                        <a href="#" class="text-button">Discover More</a>
                                     </div>
                                 </li>
                             </ul>
@@ -184,8 +249,9 @@
                                         <img class="w-50" src="assets/images/features-first-icon.jpg" alt="fourth muscle">
                                     </div>
                                     <div class="right-content">
-                                        <h4>Things from the Sea by Ray Eames</h4>
+                                        <h4>Autumn 2020</h4>
                                         <p>You may want to browse through <a rel="nofollow" href="https://templatemo.com/tag/digital-marketing" target="_parent">Digital Marketing</a> or <a href="https://templatemo.com/tag/corporate">Corporate</a> HTML CSS templates on our website.</p>
+                                        <a href="#" class="text-button">Discover More</a>
                                     </div>
                                 </li>
                                 <li class="feature-item">
@@ -195,6 +261,7 @@
                                     <div class="right-content">
                                         <h4>classic space and products Original</h4>
                                         <p>This template is built on Bootstrap v4.3.1 framework. It is easy to adapt the columns and sections.</p>
+                                        <a href="#" class="text-button">Discover More</a>
                                     </div>
                                 </li>
                             </ul>
@@ -410,12 +477,11 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <div id="map">
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8671589833157!2d77.60179831413528!3d12.980347218199974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16633d8614dd%3A0x4278e5b14a028fb5!2sFurniture%20Shops!5e0!3m2!1sen!2sin!4v1591815639175!5m2!1sen!2sin" width="100%" height="540px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8671589833157!2d77.60179831413528!3d12.980347218199974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16633d8614dd%3A0x4278e5b14a028fb5!2sFurniture%20Shops!5e0!3m2!1sen!2sin!4v1591815639175!5m2!1sen!2sin" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <div class="contact-form">
-                                <h4> Contact Us </h4>
                               @if(count($errors) > 0)
                                 <div class="alert alert-danger">
                                   <ul>
@@ -498,8 +564,14 @@
         </script>
             
             <!-- ***** Footer Start ***** -->
-            <footer class="footer-section">
-                 @include('footer.index')
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Copyright &copy; 2020 Classic Spaces and Products</p>
+                        </div>
+                    </div>
+                </div>
             </footer>
 
             <!-- jQuery -->
