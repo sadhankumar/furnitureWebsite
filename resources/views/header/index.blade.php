@@ -1,10 +1,10 @@
-<div class="header">
+<!-- <div class="header">
     <div class="container">
 	    <div class="row">
 	        <div class="col-12">
-	            <nav class="main-nav">
+	            <nav class="main-nav"> -->
 	                <!-- ***** Logo Start ***** -->
-	                <div class="row">
+	                <!-- <div class="row">
 	                    <div class="col-2">
                             <a href="{{URL::to('/')}}">
 	                        	<img src="assets/images/logo.png" alt="Classic Spaces And Products" style="width: 150px;height: 105px">
@@ -40,7 +40,7 @@
 	                        <a id="" class="sub-header" target="" href="#top" title="Products">Professionals</a> 
 	                        <a id="" class="sub-header" target="" href="#top" title="Products">About Us</a>
 	                        <a id="" class="sub-header" target="" href="#top" title="Products">Magazine</a>
-	                    </div>
+	                    </div> -->
 	                    <!-- Trigger the modal with a button -->
 	                    <div class="col-3 header-icons">
 	                        <i class="fa fa-search fa-6 icons" data-toggle="modal" data-target="#my">
@@ -49,7 +49,7 @@
 	                            target="" href="#contact-us"></a>
 	                        <i class="fa fa-phone fa-6 icons" aria-hidden="true"></i>
 	                    </div>    
-	                </div>     
+	                <!-- </div>      -->
 	                <!-- <a href="index.html" class="logo"><em>Classic Spaces And Products</em></a> -->
 	                <!-- ***** Logo End ***** -->
 	                <!-- ***** Menu Start ***** -->
@@ -61,12 +61,12 @@
 	                    <!-- <li class="scroll-to-section"><a href="#contact-us">Contact</a></li>  -->
 	                    <!-- <li class="main-button"><a href="#">Sign Up</a></li> -->
 	                <!-- </ul>         -->
-	                <a class='menu-trigger'>
-	                    <span>Menu</span>
-	                </a>
-	                <!-- ***** Menu End ***** -->
-	            </nav>
-	        </div>
-	    </div>
-	</div>
+                <!-- <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a> -->
+                <!-- ***** Menu End ***** -->
+      <!--       </nav>
+        </div>
+    </div>
+</div>
 </div>

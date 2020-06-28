@@ -15,7 +15,60 @@
 
         <!-- ***** Header Area Start ***** -->
         <header class="header-area header-sticky">
-            @include('header.index')
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <nav class="main-nav">
+                                <!-- ***** Logo Start ***** -->
+                                <div class="row">
+                                    <div class="col-2">
+                                        <a href="{{URL::to('/')}}">
+                                            <img src="assets/images/logo.png" alt="Classic Spaces And Products" style="width: 150px;height: 105px">
+                                        </a>    
+                                    </div>
+                                    <div class="col-7 header-links">
+                                        <a id="" class="sub-header" title="Products" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Products</a>
+                                        <div class="dropdown-menu flyout" aria-labelledby="dropdownMenuButton">
+                                        <div class="row" id="myTable">
+                                            <div class="col-3">
+                                                <div class="product_header px-4"> Chairs </div>
+                                                <a class="dropdown-item" href="#">Lounge Chairs </a>
+                                                <a class="dropdown-item" href="#">Dining Tables </a>
+                                                <a class="dropdown-item" href="#">Sofas & Daybeds </a>
+                                                <a class="dropdown-item" href="#">Coffee Tables </a>
+                                            </div>
+                                            <div class="col-5">
+                                                <div class="product_header px-4"> Outdoor Furniture </div>
+                                                <a class="dropdown-item" href="#">Footrests & Stools </a>
+                                                <a class="dropdown-item" href="#">Desks </a>
+                                                <a class="dropdown-item" href="#">Bookcases & Cabinets </a>
+                                                <a class="dropdown-item" href="#">Children's Furniture </a>
+                                            </div>
+                                            <div class="col-4 pl-0">
+                                                <div class="product_header px-4"> Lighting </div>
+                                                <a class="dropdown-item" href="#">Furniture Accessories </a>
+                                                <a class="dropdown-item" href="#">Accessories </a>
+                                            </div>   
+                                        </div>
+                                        </div>
+                                            <a id="" class="sub-header" target="" href="#features" title="Products">Living</a> 
+                                            <a id="" class="sub-header" target="" href="#top" title="Products">Professionals</a> 
+                                            <a id="" class="sub-header" target="" href="#top" title="Products">About Us</a>
+                                            <a id="" class="sub-header" target="" href="#top" title="Products">Magazine</a>
+                                    </div>
+                                    @include('header.index')
+                                </div>
+                                <a class='menu-trigger'>
+                                    <span>Menu</span>
+                                </a>
+                                <!-- ***** Menu End ***** -->
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>        
         </header>
         <!-- ***** Header Area End ***** -->    
 
@@ -354,12 +407,6 @@
                                     <span>Strength Trainer</span>
                                     <h4>Bret D. Bowers</h4>
                                     <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
-                                    <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -372,12 +419,6 @@
                                     <span>Muscle Trainer</span>
                                     <h4>Hector T. Daigl</h4>
                                     <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
-                                    <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -390,12 +431,6 @@
                                     <span>Power Trainer</span>
                                     <h4>Paul D. Newman</h4>
                                     <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
-                                    <ul class="social-icons">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -409,9 +444,29 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-xs-12">
-                            <div id="map">
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8671589833157!2d77.60179831413528!3d12.980347218199974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16633d8614dd%3A0x4278e5b14a028fb5!2sFurniture%20Shops!5e0!3m2!1sen!2sin!4v1591815639175!5m2!1sen!2sin" width="100%" height="540px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <div class="side-banner text-center pt-5 pb-5 px-4">
+                                <h3 class="text-success"> Welcome !</h3>
+                                <h6>Loream dsd sdew w rte fsdgnchf jfiojfios ofjdf fjdfw pwwpp vnvn slkfj poefpjdfj pwwpfmii fjaijfwoo qaadqf fa qfqwfqfqvsvwgkk pojpo qqfqfpgjpo qfqf pnvvf irrivburu </h6>
+                                <h4>Follow Us</h4>
+                                <a href=""> 
+                                    <img class="social-icons" src="assets/icon/facebook-100.png" alt="facebook">
+                                </a>
+                                <a href=""> 
+                                    <img class="social-icons" src="assets/icon/instagram-old-100.png" alt="instagram">
+                                </a>
+                                <a href=""> 
+                                    <img class="social-icons" src="assets/icon/linkedin-100.png" alt="linkedin">
+                                </a>
+                                <a href=""> 
+                                    <img class="social-icons" src="assets/icon/twitter-100.png" alt="twitter">
+                                </a>
+                                <a href=""> 
+                                    <img class="social-icons" src="assets/icon/youtube-100.png" alt="youtube">
+                                </a>
                             </div>
+                            <!-- <div id="map"> -->
+                              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8671589833157!2d77.60179831413528!3d12.980347218199974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16633d8614dd%3A0x4278e5b14a028fb5!2sFurniture%20Shops!5e0!3m2!1sen!2sin!4v1591815639175!5m2!1sen!2sin" width="100%" height="540px" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                            <!-- </div> -->
                         </div>
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <div class="contact-form">

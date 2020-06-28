@@ -1048,7 +1048,8 @@ contact
 }
 
 .contact-form textarea {
-  height: 150px;
+  height: 80px;
+  /*height: 150px;*/
   resize: none;
 }
 
@@ -1300,4 +1301,8 @@ responsive
 #myTable a {
   color: #6c6d6d !important;
   font-size: 15px;
+}
+
+.social-icons {
+  width: 25px;
 }
