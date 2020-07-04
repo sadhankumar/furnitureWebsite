@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="/css/app.css">
         <link rel="stylesheet" href="/css/swiper.css">
 
-
         <!-- ***** Header Area Start ***** -->
         <header class="header-area header-sticky">
             <div class="header">
@@ -20,16 +19,27 @@
                     <div class="row">
                         <div class="col-12">
                             <nav class="main-nav">
-                                <!-- ***** Logo Start ***** -->
+                                <!-- ***** Logo Start ***** --> 
                                 <div class="row">
                                     <div class="col-2">
                                         <a href="{{URL::to('/')}}">
                                             <img src="assets/images/logo.png" alt="Classic Spaces And Products" style="width: 150px;height: 105px">
                                         </a>    
                                     </div>
-                                    <div class="col-7 header-links">
+                                    <a class='menu-trigger'>
+                                        <span>Menu</span>
+                                    </a>
+                                    <!-- <ul class="nav">
+                                        <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                                        <li class="scroll-to-section"><a href="#features">About</a></li>
+                                        <li class="scroll-to-section"><a href="#our-classes">Classes</a></li>
+                                        <li class="scroll-to-section"><a href="#schedule">Schedules</a></li>
+                                        <li class="scroll-to-section"><a href="#contact-us">Contact</a></li> 
+                                        <li class="main-button"><a href="#">Sign Up</a></li>
+                                    </ul>  -->
+                                    <div class="col-7 header-links nav">
                                         <a id="" class="sub-header" title="Products" id="dropdownMenuButton" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Products</a>
+                                            aria-haspopup="true" aria-expanded="false">products</a>
                                         <div class="dropdown-menu flyout" aria-labelledby="dropdownMenuButton">
                                         <div class="row" id="myTable">
                                             <div class="col-3">
@@ -58,11 +68,10 @@
                                             <a id="" class="sub-header" target="" href="#top" title="Products">About Us</a>
                                             <a id="" class="sub-header" target="" href="#top" title="Products">Magazine</a>
                                     </div>
-                                    @include('header.index')
+                                    <div class="d-none d-sm-block">
+                                        @include('header.index')
+                                    </div>    
                                 </div>
-                                <a class='menu-trigger'>
-                                    <span>Menu</span>
-                                </a>
                                 <!-- ***** Menu End ***** -->
                             </nav>
                         </div>
@@ -536,7 +545,7 @@
         <script>
             var swiper = new Swiper('.swiper-container', {
               slidesPerView: 'auto',
-              slidesPerView: 3,
+              slidesPerView: window.innerWidth > 500 ? 6 : 1,
               spaceBetween: 30,
               navigation: {
                     nextEl: '.swiper-button-next',
@@ -547,7 +556,7 @@
                 clickable: true,
               },
               autoplay: {
-                delay: 5000,
+                delay: 2500,
               },
             });
         </script>

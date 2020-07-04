@@ -42,7 +42,7 @@
 	                        <a id="" class="sub-header" target="" href="#top" title="Products">Magazine</a>
 	                    </div> -->
 	                    <!-- Trigger the modal with a button -->
-	                    <div class="col-3 header-icons">
+	                    <div class="col-12 header-icons">
 	                        <i class="fa fa-search fa-6 icons" data-toggle="modal" data-target="#my">
 	                        </i>
 	                        <a class="fa fa-map-marker-alt fa-6 icons" aria-hidden="true"
