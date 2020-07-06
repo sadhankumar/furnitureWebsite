@@ -38,3 +38,9 @@ Route::get('/', 'EmailAvailable@index');
 
 Route::post('/check', 'EmailAvailable@check')->name('email_available.check');
 Route::resource('customerInfo', 'CustomerController');
+
+Route::get('locale/{locale}', function ($locale) {
+	Session::put('locale',$locale);
+
+	return redirect()->back();
+});

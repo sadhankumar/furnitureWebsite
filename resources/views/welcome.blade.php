@@ -15,7 +15,7 @@
         <!-- ***** Header Area Start ***** -->
         <header class="header-area header-sticky">
             <div class="header">
-                <div class="container">
+                <div class="container-header">
                     <div class="row">
                         <div class="col-12">
                             <nav class="main-nav">
@@ -34,16 +34,16 @@
                                         <li class="scroll-to-section"><a href="#features">About</a></li>
                                         <li class="scroll-to-section"><a href="#our-classes">Classes</a></li>
                                         <li class="scroll-to-section"><a href="#schedule">Schedules</a></li>
-                                        <li class="scroll-to-section"><a href="#contact-us">Contact</a></li> 
+                                        <li class="scroll-to-section"><a href="#contact-us">containerct</a></li> 
                                         <li class="main-button"><a href="#">Sign Up</a></li>
                                     </ul>  -->
-                                    <div class="col-7 header-links nav">
+                                    <div class="col-6 header-links nav">
                                         <a id="" class="sub-header" title="Products" id="dropdownMenuButton" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">products</a>
+                                            aria-haspopup="true" aria-expanded="false">@lang('home.Play')</a>   
                                         <div class="dropdown-menu flyout" aria-labelledby="dropdownMenuButton">
                                         <div class="row" id="myTable">
                                             <div class="col-3">
-                                                <div class="product_header px-4"> Chairs </div>
+                                                <div class="product_header px-4"> {{ __('Chairs') }} </div>
                                                 <a class="dropdown-item" href="#">Lounge Chairs </a>
                                                 <a class="dropdown-item" href="#">Dining Tables </a>
                                                 <a class="dropdown-item" href="#">Sofas & Daybeds </a>
@@ -63,14 +63,15 @@
                                             </div>   
                                         </div>
                                         </div>
-                                            <a id="" class="sub-header" target="" href="#features" title="Products">Living</a> 
-                                            <a id="" class="sub-header" target="" href="#top" title="Products">Professionals</a> 
-                                            <a id="" class="sub-header" target="" href="#top" title="Products">About Us</a>
-                                            <a id="" class="sub-header" target="" href="#top" title="Products">Magazine</a>
+                                            <a id="" class="sub-header" target="" href="#features" title="Products">@lang('home.Study')</a> 
+                                            <a id="" class="sub-header" target="" href="#top" title="Products">@lang('home.Work')</a> 
+                                            <a id="" class="sub-header" target="" href="#top" title="Products">@lang('home.Living')</a>
+                                            <a id="" class="sub-header" target="" href="#top" title="Products">@lang('home.Dining')</a>
+                                            <a id="" class="sub-header" target="" href="#top" title="Products">@lang('home.Outdoor')</a>
                                     </div>
-                                    <div class="d-none d-sm-block">
+                                    <div class="col-4">
                                         @include('header.index')
-                                    </div>    
+                                    </div>
                                 </div>
                                 <!-- ***** Menu End ***** -->
                             </nav>
@@ -203,7 +204,7 @@
           </div>
         </div> 
         <!-- ***** Features Item Start ***** -->
-            <section class="section" id="features">
+            <!-- <section class="section" id="features">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 offset-lg-3">
@@ -263,8 +264,63 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- ***** Features Item End ***** -->
+
+
+            <!-- ***** Testimonials Starts ***** -->
+            <section class="section" id="trainers">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3">
+                            <div class="section-heading">
+                                <h2>@lang('home.New Arrivals')</h2>
+                                <img src="assets/images/line-dec.png" alt="">
+                                <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="trainer-item">
+                                <div class="image-thumb">
+                                    <img src="assets/images/scandinavian.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <span>Strength Trainer</span>
+                                    <h4>Bret D. Bowers</h4>
+                                    <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="trainer-item">
+                                <div class="image-thumb">
+                                    <img src="assets/images/scandinavian-sofa.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <span>Muscle Trainer</span>
+                                    <h4>Hector T. Daigl</h4>
+                                    <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="trainer-item">
+                                <div class="image-thumb">
+                                    <img src="assets/images/ddcc0.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <span>Power Trainer</span>
+                                    <h4>Paul D. Newman</h4>
+                                    <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ***** Testimonials Ends ***** -->
 
             <!-- Swiper -->
               <div class="swiper-container" style="height: 60%;">
@@ -392,68 +448,13 @@
                 </div>
             </section>
             <!-- ***** Our Classes End ***** -->
-        
-
-            <!-- ***** Testimonials Starts ***** -->
-            <section class="section" id="trainers">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 offset-lg-3">
-                            <div class="section-heading">
-                                <h2>We carefully select every product to create a catalog.</h2>
-                                <img src="assets/images/line-dec.png" alt="">
-                                <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="trainer-item">
-                                <div class="image-thumb">
-                                    <img src="assets/images/scandinavian.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <span>Strength Trainer</span>
-                                    <h4>Bret D. Bowers</h4>
-                                    <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="trainer-item">
-                                <div class="image-thumb">
-                                    <img src="assets/images/scandinavian-sofa.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <span>Muscle Trainer</span>
-                                    <h4>Hector T. Daigl</h4>
-                                    <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="trainer-item">
-                                <div class="image-thumb">
-                                    <img src="assets/images/ddcc0.jpg" alt="">
-                                </div>
-                                <div class="down-content">
-                                    <span>Power Trainer</span>
-                                    <h4>Paul D. Newman</h4>
-                                    <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- ***** Testimonials Ends ***** -->
             
             <!-- ***** Contact Us Area Starts ***** -->
             <section class="section" id="contact-us">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-xs-12">
-                            <div class="side-banner text-center pt-5 pb-5 px-4">
+                        <div class="col-lg-6 col-md-4 col-xs-12">
+                            <!-- <div class="side-banner text-center pt-5 pb-5 px-4">
                                 <h3 class="text-success"> Welcome !</h3>
                                 <h6>Loream dsd sdew w rte fsdgnchf jfiojfios ofjdf fjdfw pwwpp vnvn slkfj poefpjdfj pwwpfmii fjaijfwoo qaadqf fa qfqwfqfqvsvwgkk pojpo qqfqfpgjpo qfqf pnvvf irrivburu </h6>
                                 <h4>Follow Us</h4>
@@ -472,12 +473,12 @@
                                 <a href=""> 
                                     <img class="social-icons" src="assets/icon/youtube-100.png" alt="youtube">
                                 </a>
+                            </div> -->
+                            <div id="map">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8671589833157!2d77.60179831413528!3d12.980347218199974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16633d8614dd%3A0x4278e5b14a028fb5!2sFurniture%20Shops!5e0!3m2!1sen!2sin!4v1591815639175!5m2!1sen!2sin" width="100%" height="305px" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div>
-                            <!-- <div id="map"> -->
-                              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8671589833157!2d77.60179831413528!3d12.980347218199974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16633d8614dd%3A0x4278e5b14a028fb5!2sFurniture%20Shops!5e0!3m2!1sen!2sin!4v1591815639175!5m2!1sen!2sin" width="100%" height="540px" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-                            <!-- </div> -->
                         </div>
-                        <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div class="offset-1 col-lg-5 col-md-3 col-xs-12">
                             <div class="contact-form">
                                 <h4> Contact Us </h4>
                               @if(count($errors) > 0)
@@ -638,5 +639,5 @@
           $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
       });
-    });    
+    });
 </script>
