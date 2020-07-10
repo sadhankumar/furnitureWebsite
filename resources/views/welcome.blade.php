@@ -23,7 +23,7 @@
                                 <div class="row">
                                     <div class="col-2">
                                         <a href="{{URL::to('/')}}">
-                                            <img src="assets/images/logo.png" alt="Classic Spaces And Products" style="width: 150px;height: 105px">
+                                            <img class="classic-logo" src="assets/images/logo.png" alt="Classic Spaces And Products">
                                         </a>    
                                     </div>
                                     <a class='menu-trigger'>
@@ -37,40 +37,47 @@
                                         <li class="scroll-to-section"><a href="#contact-us">containerct</a></li> 
                                         <li class="main-button"><a href="#">Sign Up</a></li>
                                     </ul>  -->
-                                    <div class="col-6 header-links nav">
-                                        <a id="" class="sub-header" title="Products" id="dropdownMenuButton" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">@lang('home.Play')</a>   
-                                        <div class="dropdown-menu flyout" aria-labelledby="dropdownMenuButton">
-                                        <div class="row" id="myTable">
-                                            <div class="col-3">
-                                                <div class="product_header px-4"> {{ __('Chairs') }} </div>
-                                                <a class="dropdown-item" href="#">Lounge Chairs </a>
-                                                <a class="dropdown-item" href="#">Dining Tables </a>
-                                                <a class="dropdown-item" href="#">Sofas & Daybeds </a>
-                                                <a class="dropdown-item" href="#">Coffee Tables </a>
-                                            </div>
-                                            <div class="col-5">
-                                                <div class="product_header px-4"> Outdoor Furniture </div>
-                                                <a class="dropdown-item" href="#">Footrests & Stools </a>
-                                                <a class="dropdown-item" href="#">Desks </a>
-                                                <a class="dropdown-item" href="#">Bookcases & Cabinets </a>
-                                                <a class="dropdown-item" href="#">Children's Furniture </a>
-                                            </div>
-                                            <div class="col-4 pl-0">
-                                                <div class="product_header px-4"> Lighting </div>
-                                                <a class="dropdown-item" href="#">Furniture Accessories </a>
-                                                <a class="dropdown-item" href="#">Accessories </a>
-                                            </div>   
+                                    <div class="col-sm-10 header-links nav">
+                                        <div class="d-block d-sm-none">
+                                            @include('header.mob-index')
+                                            @include('header.mobile-header')
                                         </div>
+                                        <div class="col-sm-9 d-none d-sm-block" style="    position: static;">    
+                                                <a id="" class="sub-header" title="Products" id="dropdownMenuButton" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">@lang('home.Play')</a>   
+                                                <div class="dropdown-menu flyout" aria-labelledby="dropdownMenuButton">
+                                                <div class="row" id="myTable">
+                                                    <div class="col-3">
+                                                        <div class="product_header px-4"> {{ __('Chairs') }} </div>
+                                                        <a class="dropdown-item" href="#">Lounge Chairs </a>
+                                                        <a class="dropdown-item" href="#">Dining Tables </a>
+                                                        <a class="dropdown-item" href="#">Sofas & Daybeds </a>
+                                                        <a class="dropdown-item" href="#">Coffee Tables </a>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div class="product_header px-4"> Outdoor Furniture </div>
+                                                        <a class="dropdown-item" href="#">Footrests & Stools </a>
+                                                        <a class="dropdown-item" href="#">Desks </a>
+                                                        <a class="dropdown-item" href="#">Bookcases & Cabinets </a>
+                                                        <a class="dropdown-item" href="#">Children's Furniture </a>
+                                                    </div>
+                                                    <div class="col-4 pl-0">
+                                                        <div class="product_header px-4"> Lighting </div>
+                                                        <a class="dropdown-item" href="#">Furniture Accessories </a>
+                                                        <a class="dropdown-item" href="#">Accessories </a>
+                                                    </div>   
+                                                </div>
+                                                </div>
+                                                    <a id="" class="sub-header" target="" href="#features" title="Products">@lang('home.Study')</a>
+                                                    <a id="" class="sub-header" target="" href="#top" title="Products">@lang('home.Work')</a> 
+                                                    <a id="" class="sub-header" target="" href="#top" title="Products">@lang('home.Living')</a>
+                                                    <a id="" class="sub-header" target="" href="#top" title="Products">@lang('home.Dining')</a>
+                                                    <a id="" class="sub-header" target="" href="#top" title="Products">@lang('home.Outdoor')</a>
+                                            </div>
+                                            <div class="col-sm-3 d-none d-sm-block">
+                                                @include('header.index')
+                                            </div>
                                         </div>
-                                            <a id="" class="sub-header" target="" href="#features" title="Products">@lang('home.Study')</a> 
-                                            <a id="" class="sub-header" target="" href="#top" title="Products">@lang('home.Work')</a> 
-                                            <a id="" class="sub-header" target="" href="#top" title="Products">@lang('home.Living')</a>
-                                            <a id="" class="sub-header" target="" href="#top" title="Products">@lang('home.Dining')</a>
-                                            <a id="" class="sub-header" target="" href="#top" title="Products">@lang('home.Outdoor')</a>
-                                    </div>
-                                    <div class="col-4">
-                                        @include('header.index')
                                     </div>
                                 </div>
                                 <!-- ***** Menu End ***** -->

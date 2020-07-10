@@ -6,6 +6,6 @@ return [
 	'Work'=>'పని',
 	'Living'=>'జీవించి ఉన్న',
 	'Dining'=>'భోజనాల',
-	'Outdoor'=>'బహిరంగ',
+	'Outdoor'=>'బాహ్యంగా',
 	'New Arrivals'=>'కొత్తగా వచ్చిన',
 ];

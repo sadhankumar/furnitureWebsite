@@ -613,6 +613,13 @@ banner
   padding-top: 100px;
 }
 
+@media (max-width: 700px) {
+  #bg-video {
+    padding-left: unset;
+    max-width: unset;
+  }  
+}
+
 #bg-video::-webkit-media-controls {
     display: none !important;
 }

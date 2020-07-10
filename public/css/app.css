@@ -4440,10 +4440,22 @@ input[type=button].btn-block {
 .nav {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0;
   margin-bottom: 0;
   list-style: none;
 }
+
+@media (min-width: 700px) {
+  .nav {
+      padding-left: 0;
+  }  
+}
+
+@media (max-width: 700px) {
+  .mobile-header td {
+    border: 1px solid #d0d0d0;
+    padding: 10px;
+  }
+}  
 
 .nav-link {
   display: block;
@@ -16951,9 +16963,28 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
+.classic-logo {
+  width: 150px;
+  height: 105px;
+}
+
+@media (max-width: 700px) {
+  .classic-logo {
+    width: 105px;
+    height: 80px;
+  }  
+}
+
 .header-links {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 30px;  
+}
+
+@media (max-width: 700px) {
+  .header-links {
+    padding-top: unset;
+    background-color: #eaeaea !important;
+  }  
 }
 
 .header-links .sub-header {
@@ -16967,7 +16998,8 @@ readers do not read off random characters that represent icons */
 }
 
 .header-icons {
-  padding-top: 35px;
+  padding-top: 5px;
+  /*padding-top: 35px;*/
   padding-bottom: 30px;
 }
 
