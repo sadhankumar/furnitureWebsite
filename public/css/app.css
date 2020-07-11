@@ -16984,8 +16984,18 @@ readers do not read off random characters that represent icons */
   .header-links {
     padding-top: unset;
     background-color: #eaeaea !important;
+    position: fixed !important;
+    top: 80px;
+    width: 100%;
   }  
 }
+
+@media (max-width: 700px) {
+  .select-language-menu {
+    top: 30px !important;
+    left: 60px !important;
+  }
+}  
 
 .header-links .sub-header {
   color: #333;
@@ -17010,9 +17020,12 @@ readers do not read off random characters that represent icons */
   color: #636b6f;
 }
 
+.social-icons {
+  width: 25px;
+}
+
 @font-face {
   font-family: "Gotham";
   src: url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.eot");
   src: url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.woff") format("woff"), url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.svg#Gotham") format("svg");
 }
-

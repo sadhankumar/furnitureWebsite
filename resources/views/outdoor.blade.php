@@ -501,7 +501,12 @@
                                 <div class="row">
                                   <div class="col-md-6 col-sm-12">
                                     <fieldset>
-                                      <input name="customer_name" type="text" id="name" placeholder="Your Name*" required="">
+                                      <input name="customer_first_name" type="text" id="name" placeholder="First Name*" required="">
+                                    </fieldset>
+                                  </div>
+                                  <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                      <input name="customer_last_name" type="text" id="name" placeholder="customer_last_name Name*" required="">
                                     </fieldset>
                                   </div>
                                   <div class="col-md-6 col-sm-12">
