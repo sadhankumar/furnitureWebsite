@@ -19,7 +19,7 @@ body {
 <body>
 
 <div class="header">
-  	<p> Hi, <?php echo $data['customer_name']; ?></p>
+  	<p> Hi, <?php echo $data['customer_first_name']; ?></p>
 	<p> I have some query Like <?php echo $data['description']; ?></p>
 	<p> It would be appriciative, if you gone through this FeedBack.</p>
 </div>

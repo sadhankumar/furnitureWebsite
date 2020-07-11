@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCustomerInfosTable extends Migration
+class CreateCustomerDetailsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCustomerInfosTable extends Migration
      */
     public function up()
     {
-        Schema::create('customer_detail', function (Blueprint $table) {
+        Schema::create('customer_details', function (Blueprint $table) {
             $table->id();
             $table->string('customer_first_name'); //varchar(255)
             $table->string('customer_last_name'); //varchar(255)
@@ -32,6 +32,6 @@ class CreateCustomerInfosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('customer_detail');
+        Schema::dropIfExists('customer_details');
     }
 }
