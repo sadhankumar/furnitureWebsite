@@ -3,10 +3,12 @@
          <div class="col">
             <div class="footer-heading">Products</div>
             <ul class="row__list">
-               <li class="list__item"><a href="/en-as/living/product" target="_self" data-reactid="15" class="sub_item">Products for homes</a></li>
-               <li class="list__item"><a href="/en-as/office/product" target="_self" data-reactid="17" class="sub_item">Products for Professionals</a></li>
-               <li class="list__item"><a href="/en-as/living/product/topic/new" target="_self" class="sub_item">New Products</a></li>
-               <li class="list__item"><a href="/en-as/corporation/designer" target="_self" class="sub_item">Designers &amp; Architects</a></li>
+               <li class="list__item"><a href="/en-as/living/product" target="_self" data-reactid="15" class="sub_item">Play</a></li>
+               <li class="list__item"><a href="/en-as/office/product" target="_self" data-reactid="17" class="sub_item">Study</a></li>
+               <li class="list__item"><a href="/en-as/living/product/topic/new" target="_self" class="sub_item">Work</a></li>
+               <li class="list__item"><a href="/en-as/corporation/designer" target="_self" class="sub_item">Living</a></li>
+               <li class="list__item"><a href="/en-as/corporation/designer" target="_self" class="sub_item">Dining</a></li>
+               <li class="list__item"><a href="/en-as/corporation/designer" target="_self" class="sub_item">Outdoor</a></li>
             </ul>
          </div>
          <div class="col">
