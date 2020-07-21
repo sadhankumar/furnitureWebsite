@@ -116,6 +116,7 @@
             .swiper-slide {
                 height: 25vh;
             }
+
         </style>
 
         <!-- ***** Preloader Start ***** -->
@@ -133,7 +134,7 @@
     </head>
     <body>
         <!-- ***** Main Banner Area Start ***** -->
-        <div class="main-banner" id="top">
+        <!-- <div class="main-banner" id="top">
             <video autoplay muted loop id="bg-video">
                 <source src="assets/videoplayback.mp4" type="video/mp4" />
             </video>
@@ -147,7 +148,40 @@
                 </div>
             </div>
         </div>
-        <!-- ***** Main Banner Area End ***** -->    
+ -->        <!-- ***** Main Banner Area End ***** --> 
+        <!-- Swiper -->
+        <div id="top">
+         <!-- Swiper -->
+          <div class="swiper-container-banner">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card swiper-slide-banner">
+                  <img class="slider-banner" src="assets/banner/C3.JPG" alt="">
+                </div>  
+              </div>  
+              <div class="swiper-slide">
+                <div class="card swiper-slide-banner">
+                  <img class="slider-banner" src="assets/banner/A6.JPG" alt="">
+                </div>  
+              </div>
+              <div class="swiper-slide">
+                <div class="card swiper-slide-banner">
+                  <img class="slider-banner" src="assets/banner/B2.JPG" alt="">
+                </div>  
+              </div>
+              <div class="swiper-slide">
+                <div class="card swiper-slide-banner">
+                  <img class="slider-banner" src="assets/banner/C2.JPG" alt="">
+                </div>  
+              </div>
+            </div>       
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>  
         <script type="text/javascript" src="{{ url('js/bootstrap.min.js-preloader')}}"></script>
         <!-- Modal -->
         <div id="my" class="modal fade bd-example-modal-lg" role="dialog">
@@ -304,20 +338,22 @@
                       <img src="assets/images/king_chair.png" alt="" style="height: 180px;">
                     </div>
                   </div>
-                </div>
+                </div>       
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
               </div>
             <!-- ***** Call to Action Start ***** -->
-                <section class="section" id="call-to-action" style="background-image: url('../assets/images/cta-bg.jpg')">
+                <section class="section" id="call-to-action" style="background-image: url('../assets/banner/E1.JPG')">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-10 offset-lg-1">
                                 <div class="cta-content">
-                                    <h2>Don’t <em>think</em>, begin <em>today</em>!</h2>
-                                    <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
+                                    <h2>Play</h2>
                                     <div class="main-button scroll-to-section">
-                                        <a href="/outdoor">Outdoor Collection</a>
+                                        <a href="/outdoor">Play Collection</a>
                                     </div>
                                 </div>
                             </div>
@@ -325,24 +361,75 @@
                     </div>
                 </section>
             <!-- ***** Call to Action End ***** -->
+            <section class="section" id="our-classes">
+                <div>
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="section-heading">
+                            <h2>Back <em> to School</em></h2>
+                            <img src="assets/images/line-dec.png" alt="">
+                            <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
+                        </div>
+                    </div>
+                </div>
+                <section class="section" id="call-to-action" style="background-image: url('../assets/banner/A5.JPG')">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="cta-content">
+                                    <h2>Study</h2>
+                                    <div class="main-button scroll-to-section">
+                                        <a href="/outdoor">Study Collection</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>    
             <!-- ***** Our Classes Start ***** -->
             <section class="section" id="our-classes">
-                <div class="container">
+                <div>
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="section-heading">
+                            <h2>OFFICE <em> FURNITURE </em></h2>
+                            <img src="assets/images/line-dec.png" alt="">
+                            <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
+                        </div>
+                    </div>
+                </div>
+                <section class="section" id="call-to-action" style="background-image: url('../assets/banner/work-B1.jpg')">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="cta-content">
+                                    <h2>Work</h2>
+                                    <div class="main-button scroll-to-section">
+                                        <a href="/outdoor">OFFICE Collection</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>    
+            <!-- ***** Our Classes Start ***** -->
+            <section class="section" id="our-classes">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-6 offset-lg-3">
                             <div class="section-heading">
-                                <h2>Back <em>to the Office</em></h2>
+                                <h2>Back <em> to School</em></h2>
                                 <img src="assets/images/line-dec.png" alt="">
                                 <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
                             </div>
                         </div>
                     </div>
-                    <section class="section" id="call-to-action" style="background-image: url('../assets/images/cta-bg.jpg')">
+                    <section class="section" id="call-to-action" style="background-image: url('../assets/banner/A6.JPG')">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-1">
                                     <div class="cta-content">
-                                        <h2>Don’t <em>think</em>, begin <em>today</em>!</h2>
+                                        <h2></h2>
                                         <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
                                         <div class="main-button scroll-to-section">
                                             <a href="#our-classes">Outdoor Collection</a>
@@ -410,6 +497,26 @@
               },
               autoplay: {
                 delay: 2500,
+              },
+            });
+        </script>
+
+                <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container-banner', {
+              slidesPerView: 'auto',
+              slidesPerView: window.innerWidth > 500 ? 1 : 1,
+              spaceBetween: 30,
+              navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+              },
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              autoplay: {
+                delay: 3000,
               },
             });
         </script>

@@ -48,7 +48,7 @@
       <!-- <div class="row" data-reactid="116"><a href="#" id="footer__scroll__top" class="button button-primary" data-reactid="117">Up</a> -->
       </div>
       <div class="col-lg-12">
-        <p>Copyright &copy; 2020 Classic Spaces and Products</p>
+        <p>Copyright &copy; 2020 Simplified Woodcrafting Solution Pvt LTD</p>
       </div>
     </div>
 </div>
