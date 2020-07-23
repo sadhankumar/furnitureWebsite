@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Classic Spaces And Products</title>
+        <title>Simplified Woodcrafting Solution</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -23,7 +23,7 @@
                             <div class="row">
                                 <div class="col-2">
                                     <a href="{{URL::to('/')}}">
-                                        <img src="assets/images/logo.png" alt="Classic Spaces And Products" style="width: 150px;height: 105px">
+                                        <img src="assets/images/logo.png" alt="Simplified Woodcrafting Solution" style="width: 150px;height: 105px">
                                     </a>    
                                 </div>
                                 <div class="col-7 header-links">

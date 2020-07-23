@@ -13,9 +13,10 @@ class CreateCustomerInfosTable extends Migration
      */
     public function up()
     {
-        Schema::create('customer_infos', function (Blueprint $table) {
+        Schema::create('customer_detail', function (Blueprint $table) {
             $table->id();
-            $table->string('customer_name'); //varchar(255)
+            $table->string('customer_first_name'); //varchar(255)
+            $table->string('customer_last_name'); //varchar(255)
             $table->string('email');
             $table->mediumInteger('numbers');
             $table->mediumInteger('product_id');
@@ -31,6 +32,6 @@ class CreateCustomerInfosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('customer_infos');
+        Schema::dropIfExists('customer_detail');
     }
 }

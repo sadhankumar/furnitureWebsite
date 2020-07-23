@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendMail;
-use App\CustomerInfo;
+use App\CustomerDetail;
 
 class CustomerController extends Controller
 {
@@ -48,15 +48,17 @@ class CustomerController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'customer_name' => 'required',
+            'customer_first_name' => 'required',
+            'customer_last_name' => 'required',
             'email'         => 'required',
             'numbers'       => 'required|digits:10',
             'product_id'    => 'required',
             'description'   => 'required'
         ]);
 
-        $customerInfo = new CustomerInfo([
-            'customer_name'  => $request->get('customer_name'),
+        $customerInfo = new CustomerDetail([
+            'customer_first_name'  => $request->get('customer_first_name'),
+            'customer_last_name'  => $request->get('customer_last_name'),
             'email'          => $request->get('email'),
             'numbers'        => $request->get('numbers'),
             'product_id'     => $request->get('product_id'),
@@ -65,7 +67,7 @@ class CustomerController extends Controller
 
 
         $data = array(
-            'customer_name' => $request->customer_name,
+            'customer_first_name' => $request->customer_first_name,
             'description'   => $request->description
         );
 

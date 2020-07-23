@@ -8,4 +8,5 @@ return [
 	'Dining'=>'Dining',
 	'Outdoor'=>'Outdoor',
 	'New Arrivals'=>'New Arrivals',
+	'aboutUs'=>'About us'
 ];

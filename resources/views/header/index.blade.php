@@ -2,9 +2,14 @@
     <div class="pr-3">
 	    <i class="fa fa-search fa-6 icons" data-toggle="modal" data-target="#my">
 	    </i>
-	    <a class="fa fa-map-marker-alt fa-6 icons" aria-hidden="true"
-	        target="" href="#contact-us"></a>
-	    <i class="fa fa-phone fa-6 icons" aria-hidden="true"></i>
+	    <span class="scroll-to-section">
+	    	<a class="fa fa-map-marker-alt fa-6 icons" aria-hidden="true"
+        	target="" href="#contact-us"></a>
+       	</span>
+	    <span class="scroll-to-section">
+	    	<a class="fa fa-phone fa-6 icons" aria-hidden="true"
+        	target="" href="#contact-us"></a>
+	    </span>	
 	</div>
     <div class="dropdown Language">
 	  <img src="assets/icon/india-flag.png" class="dropdown-toggle" id="dropdownMenuLanguage"

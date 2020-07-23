@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Classic Spaces And Products</title>
+        <title>Simplified Woodcrafting Solution</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -22,7 +22,7 @@
                             <!-- ***** Logo Start ***** -->
                             <div class="row">
                                 <div class="col-2">
-                                    <img src="assets/images/logo.png" alt="Classic Spaces And Products" style="width: 150px;height: 105px">
+                                    <img src="assets/images/logo.png" alt="Simplified Woodcrafting Solution" style="width: 150px;height: 105px">
                                 </div>
                                 <div class="col-7 header-links">
                                     <a id="" class="sub-header" title="Products" id="dropdownMenuButton" data-toggle="dropdown"
@@ -259,7 +259,7 @@
                                         <img class="w-50" src="assets/images/features-first-icon.jpg" alt="training fifth">
                                     </div>
                                     <div class="right-content">
-                                        <h4>classic space and products Original</h4>
+                                        <h4>Simplified Woodcrafting Solution Original</h4>
                                         <p>This template is built on Bootstrap v4.3.1 framework. It is easy to adapt the columns and sections.</p>
                                         <a href="#" class="text-button">Discover More</a>
                                     </div>
@@ -501,7 +501,12 @@
                                 <div class="row">
                                   <div class="col-md-6 col-sm-12">
                                     <fieldset>
-                                      <input name="customer_name" type="text" id="name" placeholder="Your Name*" required="">
+                                      <input name="customer_first_name" type="text" id="name" placeholder="First Name*" required="">
+                                    </fieldset>
+                                  </div>
+                                  <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                      <input name="customer_last_name" type="text" id="name" placeholder="customer_last_name Name*" required="">
                                     </fieldset>
                                   </div>
                                   <div class="col-md-6 col-sm-12">
@@ -568,7 +573,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <p>Copyright &copy; 2020 Classic Spaces and Products</p>
+                            <p>Copyright &copy; 2020 Simplified Woodcrafting Solution Pvt LTD</p>
                         </div>
                     </div>
                 </div>

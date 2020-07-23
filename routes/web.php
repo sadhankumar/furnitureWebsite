@@ -21,9 +21,9 @@ Route::get('/outdoor', function () {
     return view('master');
 });
 
-Route::get('/kids', function () {
-    return view('kids');
-});
+// Route::get('/kids', function () {
+//     return view('kids');
+// });
 
 Route::get('/HomeStories', function () {
     return view('living/home-stories');

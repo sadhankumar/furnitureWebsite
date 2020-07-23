@@ -13,10 +13,9 @@
 			    <i class="fa fa-phone fa-6 icons" aria-hidden="true"></i>
 		    </td>	
 		    <td>
-	    	    <div class="dropdown Language">
-				  <img src="assets/icon/india-flag.png" class="dropdown-toggle" id="dropdownMenuLanguage"
-				  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				  <div class="dropdown-menu" aria-labelledby="dropdownMenuLanguage">
+	    	    <div class="dropdown Language dropleft">
+				  <img src="assets/icon/india-flag.png" class="dropdown-toggle" id="dropdownMenuLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  <div class="dropdown-menu select-language-menu" aria-labelledby="dropdownMenuLanguage">
 				    <a class="dropdown-item" href="locale/en">English</a>
 				    <a class="dropdown-item" href="locale/ta">தமிழ்</a>
 				    <a class="dropdown-item" href="locale/te">తెలుగు</a>

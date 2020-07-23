@@ -16,7 +16,7 @@ class EmailAvailable extends Controller
     	if($request->get('email')) {
 
     		$email = $request->get('email');
-    		$data = DB::table("customer_infos")
+    		$data = DB::table("customer_details")
     			->where('email', $email)
     			->count();
     		if ($data > 0 ) {
