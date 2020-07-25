@@ -10726,7 +10726,7 @@ readers do not read off random characters that represent icons */
 }
 
 .header-links {
-  padding-top: 30px;
+  padding-top: 15px;
   padding-bottom: 30px;  
 }
 
@@ -10735,7 +10735,7 @@ readers do not read off random characters that represent icons */
     padding-top: unset;
     background-color: #eaeaea !important;
     position: fixed !important;
-    top: 80px;
+    top: 60px;
     width: 100%;
   }  
 }
@@ -10748,30 +10748,17 @@ readers do not read off random characters that represent icons */
 }
 
 .header-links {
-  padding-top: 30px;
   padding-bottom: 30px;
 
   .sub-header {
     color: #333;
-    font-size: 1.29412rem;
+    font-size: 15px;
     font-weight: 500;
     padding-left: .57rem;
     padding-right: .57rem;
     line-height: 1.9rem;
     font-family: "Gotham";
   }
-}
-
-.header-links {
-  .sub-header { 
-    color: #333;
-    font-size: 1.29412rem;
-    font-weight: 500;
-    padding-left: 0.57rem;
-    padding-right: 0.57rem;
-    line-height: 1.9rem;
-    font-family: "Gotham";
-  }  
 }
 
 .header-icons {
@@ -10836,9 +10823,65 @@ $fa-font-path: "../fonts";
 
 .swiper-container-banner {
   .swiper-slide {
-    height: 100vh;
+    /*height: 100vh;*/
     @media (max-width: 576px) {
       height: 85vh;
     }
+  }
+}
+
+#products-list {
+  padding-top: 3rem !important;
+  @media (max-width: 450px) {
+    padding-top: unset !important;
+  }
+
+  .swiper-slide {
+    height: 25vh;
+  }
+
+  .items{
+    height: 25vh;
+    @media (max-width: 450px) {
+      height: 40vh;
+    }
+  }
+}
+
+.product-banner {
+  height: 80vh;
+  @media (max-width: 450px) {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper-container-banner .swiper-slide {
+      height: 39vh;
+  }
+
+  #products-list .swiper-slide {
+    height: 40vh;
+  }
+}
+
+.parallax {
+  min-height: 380px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#category {
+  padding: 150px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; 
+}
+
+.scroll-to-section {
+  a:hover {
+    color: #131212;
   }
 }

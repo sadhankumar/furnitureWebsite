@@ -27635,19 +27635,17 @@ readers do not read off random characters that represent icons */
 .classic-logo {
   width: 150px;
   height: 105px;
-  float: right !important;
 }
 
 @media (max-width: 700px) {
   .classic-logo {
     width: 105px;
     height: 80px;
-    float: none !important;
   }
 }
 
 .header-links {
-  padding-top: 30px;
+  padding-top: 15px;
   padding-bottom: 30px;
 }
 
@@ -27656,7 +27654,7 @@ readers do not read off random characters that represent icons */
     padding-top: unset;
     background-color: #eaeaea !important;
     position: fixed !important;
-    top: 80px;
+    top: 60px;
     width: 100%;
   }
 }
@@ -27669,24 +27667,12 @@ readers do not read off random characters that represent icons */
 }
 
 .header-links {
-  padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .header-links .sub-header {
   color: #333;
-  font-size: 1.29412rem;
-  font-weight: 500;
-  padding-left: 0.57rem;
-  padding-right: 0.57rem;
-  line-height: 1.9rem;
-  font-family: "Gotham";
-}
-
-.header-links .sub-header {
-  color: #333;
-  /*font-size: 1.29412rem;*/
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   padding-left: 0.57rem;
   padding-right: 0.57rem;
@@ -27758,12 +27744,75 @@ readers do not read off random characters that represent icons */
 }
 
 .swiper-container-banner .swiper-slide {
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 @media (max-width: 576px) {
   .swiper-container-banner .swiper-slide {
     height: 85vh;
   }
+}
+
+#products-list {
+  padding-top: 3rem !important;
+}
+
+@media (max-width: 450px) {
+  #products-list {
+    padding-top: unset !important;
+  }
+}
+
+#products-list .swiper-slide {
+  height: 25vh;
+}
+
+#products-list .items {
+  height: 25vh;
+}
+
+@media (max-width: 450px) {
+  #products-list .items {
+    height: 40vh;
+  }
+}
+
+.product-banner {
+  height: 80vh;
+}
+
+@media (max-width: 450px) {
+  .product-banner {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper-container-banner .swiper-slide {
+    height: 39vh;
+  }
+
+  #products-list .swiper-slide {
+    height: 40vh;
+  }
+}
+
+.parallax {
+  min-height: 380px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#category {
+  padding: 150px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.scroll-to-section a:hover {
+  color: #131212;
 }
 

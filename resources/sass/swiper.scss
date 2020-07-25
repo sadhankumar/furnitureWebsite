@@ -23,3 +23,45 @@
   -webkit-align-items: center;
   align-items: center;
 }
+
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.swiper-pagination-bullet {
+  margin: 0 4px;
+  background: #ffffff00;
+  width: 6px;
+  border: 2px solid #ffffff;
+  height: 6px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    margin: 0 4px;
+    background: #ffffff00;
+    width: 12px;
+    border: 2px solid #ffffff;
+    height: 12px;
+    transition: all .2s ease-out;
+}
+
+.swiper-pagination-bullet:hover {
+    margin: 0 4px;
+    background: #ffffff00;
+    width: 12px;
+    border: 2px solid #ffffff;
+    height: 12px;
+    transition: all .2s ease-out;
+}

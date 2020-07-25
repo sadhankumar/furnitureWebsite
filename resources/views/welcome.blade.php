@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="/css/swiper.css">
 
         <!-- ***** Header Area Start ***** -->
-        <header class="header-area header-sticky">
+        <header class="header-area header-sticky px-3 background-header">
             <div class="header">
                 <div class="container-header">
                     <div class="row">
@@ -21,10 +21,11 @@
                             <nav class="main-nav">
                                 <!-- ***** Logo Start ***** --> 
                                 <div class="row">
-                                    <div class="col-2">
-                                        <a href="{{URL::to('/')}}">
+                                    <div class="col-10 col-sm-3">
+                                        <!-- <a href="{{URL::to('/')}}">
                                             <img class="classic-logo" src="assets/images/logo.png" alt="Simplified Woodcrafting Solution">
-                                        </a>    
+                                        </a> -->
+                                        <a href="index.html" class="logo">Simplified <em> Woodcrafting </em></a>   
                                     </div>
                                     <a class='menu-trigger'>
                                         <span>Menu</span>
@@ -37,7 +38,7 @@
                                         <li class="scroll-to-section"><a href="#contact-us">containerct</a></li> 
                                         <li class="main-button"><a href="#">Sign Up</a></li>
                                     </ul>  -->
-                                    <div class="col-sm-10 header-links nav px-0">
+                                    <div class="col-sm-9 header-links nav px-0">
                                         <div class="d-block d-sm-none">
                                             @include('header.mob-index')
                                             @include('header.mobile-header')
@@ -56,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-            </div>        
+            </div>
         </header>
         <!-- ***** Header Area End ***** -->    
 
@@ -113,10 +114,9 @@
                 margin-bottom: 30px;
             }
 
-            .swiper-slide {
+/*            .swiper-slide {
                 height: 25vh;
-            }
-
+            }*/
         </style>
 
         <!-- ***** Preloader Start ***** -->
@@ -150,7 +150,7 @@
         </div>
  -->        <!-- ***** Main Banner Area End ***** --> 
         <!-- Swiper -->
-        <div id="top">
+        <div id="top" class="product-banner" style="margin-top: 60px;">
          <!-- Swiper -->
           <div class="swiper-container-banner">
             <div class="swiper-wrapper">
@@ -195,6 +195,10 @@
                             </div>
                         </div>
                     </div>
+              </div>
+              <div class="swiper-slide" id="call-to-action" style="background-image: url('../assets/banner/C3.JPG')">
+              </div>
+               <div class="swiper-slide" id="call-to-action" style="background-image: url('../assets/banner/D1.JPG')">
               </div>
             </div>       
             <!-- Add Arrows -->
@@ -260,7 +264,7 @@
                             <div class="section-heading">
                                 <h2>@lang('home.New Arrivals')</h2>
                                 <img src="assets/images/line-dec.png" alt="">
-                                <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
+                                <p>check out latest designs & styles online for best prices in India.</p>
                             </div>
                         </div>
                     </div>
@@ -269,7 +273,7 @@
                             <div class="trainer-item">
                                 <div class="image-thumb">
                                     <a href="{{URL::to('/HomeStories')}}">
-                                        <img src="assets/images/scandinavian.jpg" alt="">
+                                        <img src="assets/banner/new/A3.jpg" alt="">
                                     </a>    
                                 </div>
                                 <div class="down-content">
@@ -281,7 +285,7 @@
                         <div class="col-lg-4">
                             <div class="trainer-item">
                                 <div class="image-thumb">
-                                    <img src="assets/images/scandinavian-sofa.jpg" alt="">
+                                    <img src="assets/banner/new/B2.jpg" alt="">
                                 </div>
                                 <div class="down-content">
                                     <span>Muscle Trainer</span>
@@ -292,7 +296,7 @@
                         <div class="col-lg-4">
                             <div class="trainer-item">
                                 <div class="image-thumb">
-                                    <img src="assets/images/ddcc0.jpg" alt="">
+                                    <img src="assets/banner/new/C2.jpg" alt="">
                                 </div>
                                 <div class="down-content">
                                     <span>Power Trainer</span>
@@ -306,56 +310,36 @@
             <!-- ***** Testimonials Ends ***** -->
 
             <!-- Swiper -->
-              <div class="swiper-container" style="height: 40%;">
+              <div class="swiper-container" id="products-list" style="height: 40%;">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="card" style="width: 18rem;">
-                      <img src="assets/images/5911.jpg" alt="" style="height: 180px;">
+                      <img class="items" src="assets/banner/bg-removed/A1.png" alt="">
                     </div>  
                   </div>
                   <div class="swiper-slide" style="width: 232px;">
                     <div class="card" style="width: 18rem;">
-                      <img src="assets/images/Cam_1.RGB.jpg" alt="" style="height: 180px;">
+                      <img class="items" src="assets/banner/bg-removed/C2.png" alt="">
                     </div>
                   </div>
                   <div class="swiper-slide" style="width: 232px;">
                     <div class="card" style="width: 18rem;">
-                      <img src="assets/images/Deck_Chair.jpg" alt="" style="height: 180px;">
+                      <img class="items" src="assets/banner/bg-removed/D1.png" alt="">
                     </div>
                   </div>
                   <div class="swiper-slide" style="width: 232px;">
                     <div class="card" style="width: 18rem;">
-                      <img src="assets/images/features-first-icon.jpg" alt="" style="height: 180px;">
+                        <img class="items" src="assets/images/wooden-chair.jpg" alt="">
                     </div>
                   </div>
                   <div class="swiper-slide" style="width: 232px;">
                     <div class="card" style="width: 18rem;">
-                      <img src="assets/images/king_chair.png" alt="" style="height: 180px;">
+                      <img class="items" src="assets/banner/bg-removed/B8.png" alt="">
                     </div>
                   </div>
                   <div class="swiper-slide" style="width: 232px;">
                     <div class="card" style="width: 18rem;">
-                       <img src="assets/images/plastic-stackable.jpg" alt="" style="height: 180px;">
-                    </div>
-                  </div>
-                  <div class="swiper-slide" style="width: 232px;">
-                    <div class="card" style="width: 18rem;">
-                        <img src="assets/images/wooden-chair.jpg" alt="" style="height: 180px;">
-                    </div>
-                  </div>
-                  <div class="swiper-slide" style="width: 232px;">
-                    <div class="card" style="width: 18rem;">
-                      <img src="assets/images/Cam_1.RGB.jpg" alt="" style="height: 180px;">
-                    </div>
-                  </div>
-                  <div class="swiper-slide" style="width: 232px;">
-                    <div class="card" style="width: 18rem;">
-                      <img src="assets/images/features-first-icon.jpg" alt="" style="height: 180px;">
-                    </div>
-                  </div>
-                  <div class="swiper-slide" style="width: 232px;">
-                    <div class="card" style="width: 18rem;">
-                      <img src="assets/images/king_chair.png" alt="" style="height: 180px;">
+                      <img class="items" src="assets/banner/bg-removed/E1-removebg.png" alt="">
                     </div>
                   </div>
                 </div>       
@@ -381,33 +365,33 @@
                     </div>
                 </section> -->
             <!-- ***** Call to Action End ***** -->
-            <!-- <section class="section" id="our-classes">
+            <section class="section">
                 <div>
                     <div class="col-lg-6 offset-lg-3">
                         <div class="section-heading">
-                            <h2>Back <em> to School</em></h2>
+                            <h2>Sample <em> 1 </em></h2>
                             <img src="assets/images/line-dec.png" alt="">
                             <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
                         </div>
                     </div>
                 </div>
-                <section class="section" id="call-to-action" style="background-image: url('../assets/banner/A5.JPG')">
+                <section class="section parallax" id="category" style="background-image: url('../assets/banner/A5.JPG')">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-10 offset-lg-1">
                                 <div class="cta-content">
-                                    <h2>Study</h2>
+                                    <h2>sample 1</h2>
                                     <div class="main-button scroll-to-section">
-                                        <a href="/outdoor">Study Collection</a>
+                                        <a href="/outdoor">laoreet ut</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-            </section> -->    
+            </section>    
             <!-- ***** Our Classes Start ***** -->
-            <!-- <section class="section" id="our-classes">
+            <section class="section" id="our-classes">
                 <div>
                     <div class="col-lg-6 offset-lg-3">
                         <div class="section-heading">
@@ -417,7 +401,7 @@
                         </div>
                     </div>
                 </div>
-                <section class="section" id="call-to-action" style="background-image: url('../assets/banner/work-B1.jpg')">
+                <section class="section parallax" id="category" style="background-image: url('../assets/banner/work-B1.jpg')">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-10 offset-lg-1">
@@ -431,7 +415,7 @@
                         </div>
                     </div>
                 </section>
-            </section> -->
+            </section>
             
             <!-- ***** Contact Us Area Starts ***** -->
             <section class="section" id="contact-us">
